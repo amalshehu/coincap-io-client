@@ -1,11 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import './components/header/Header';
+import Header from './components/header/Header';
+import Table from './components/table/Table';
+import { Box } from '@material-ui/core';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -18,9 +22,11 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Header />
+      <Table></Table>
     </div>
   );
-}
+};
 
 export default App;
